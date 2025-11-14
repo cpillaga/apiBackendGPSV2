@@ -5,11 +5,16 @@ meta {
 }
 
 get {
-  url: {{url_backend
+  url: {{url_backend}}/api/v1/device/getAllUserDevice
   body: none
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
