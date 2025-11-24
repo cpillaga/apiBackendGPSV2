@@ -1,0 +1,25 @@
+meta {
+  name: Obtener Notificaciones Paginado
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{url_backend}}/api/v1/notifications/getNotificationPaginated?page=1&limit =5
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  "limit ": 5
+}
+
+auth:bearer {
+  token: {{Authorization}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

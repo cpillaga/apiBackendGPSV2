@@ -4,7 +4,7 @@ meta {
   seq: 1
 }
 
-get {
+put {
   url: {{url_backend}}/api/v1/rol/changeRol
   body: json
   auth: bearer
@@ -16,7 +16,7 @@ auth:bearer {
 
 body:json {
   {
-    "administrator": false
+    "adminstrator": true 
   }
 }
 
