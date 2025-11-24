@@ -5,16 +5,16 @@ meta {
 }
 
 get {
-  url: {{url_backend}}/api/v1/reportes/generateReportPDFSelection?id=36&startDate=2000-01-01&endDate=2025-10-11&typeOfReport=Recorridos
+  url: {{url_backend}}/api/v1/reportes/generateReportPDFSelection?id=45&startDate=2000-01-01&endDate=2025-10-11&typeOfReport=Eventos
   body: none
   auth: bearer
 }
 
 params:query {
-  id: 36
+  id: 45
   startDate: 2000-01-01
   endDate: 2025-10-11
-  typeOfReport: Recorridos
+  typeOfReport: Eventos
 }
 
 auth:bearer {
@@ -23,4 +23,5 @@ auth:bearer {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

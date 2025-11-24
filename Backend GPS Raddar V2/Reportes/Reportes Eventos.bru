@@ -5,15 +5,15 @@ meta {
 }
 
 get {
-  url: {{url_backend}}/api/v1/reportes/generarReporteEventos?id=28&startDate=2025-01-01&endDate=2025-10-11&page=1&limit=10
+  url: {{url_backend}}/api/v1/reportes/generarReporteEventos?id=45&startDate=2025-11-14&endDate=2025-11-14&page=1&limit=10
   body: none
   auth: bearer
 }
 
 params:query {
-  id: 28
-  startDate: 2025-01-01
-  endDate: 2025-10-11
+  id: 45
+  startDate: 2025-11-14
+  endDate: 2025-11-14
   page: 1
   limit: 10
 }
@@ -24,4 +24,5 @@ auth:bearer {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }
