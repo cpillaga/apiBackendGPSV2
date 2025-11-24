@@ -5,14 +5,14 @@ meta {
 }
 
 get {
-  url: {{url_backend}}/api/v1/notifications/getNotificationPaginated?page=1&limit =5
+  url: {{url_backend}}/api/v1/notifications/getNotificationPaginated?page=2&limit=3
   body: none
   auth: bearer
 }
 
 params:query {
-  page: 1
-  "limit ": 5
+  page: 2
+  limit: 3
 }
 
 auth:bearer {
