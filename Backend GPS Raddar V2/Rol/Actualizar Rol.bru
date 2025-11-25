@@ -1,0 +1,26 @@
+meta {
+  name: Actualizar Rol
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{url_backend}}/api/v1/rol/changeRol
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "adminstrator": true 
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
