@@ -1,0 +1,25 @@
+meta {
+  name: Obtener Dispositivos con Propetarios y administrador
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{url_backend}}/api/v1/device/getAllDeviceswithDriversController?page=1&limit=20
+  body: none
+  auth: bearer
+}
+
+params:query {
+  page: 1
+  limit: 20
+}
+
+auth:bearer {
+  token: {{Authorization}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,11 +1,11 @@
 meta {
-  name: Estado Firebase
+  name: Obtener Propetarios
   type: http
-  seq: 3
+  seq: 6
 }
 
 get {
-  url: {{url_backend}}/api/v1/accounts/statusFCM
+  url: {{url_backend}}/api/v1/users/getAllUserDrivers
   body: none
   auth: bearer
 }

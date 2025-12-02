@@ -1,0 +1,36 @@
+meta {
+  name: Crear Dispositivo Automatic con Asignar Propetario
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{url_backend}}/api/v1/users/createDriverDeviceController
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{Authorization}}
+}
+
+body:json {
+  {
+     "name_model": "MODELO-SMARTPHONEPRUEBA",
+     "serial_model": "12312121222245672",
+     "contact_model": "22-33",
+     "category_model": "Car",
+     "attributes": [
+      {
+        "deviceImage": "ffff",
+        "brand_label": "XYZ-987"
+      }
+    ],
+      "driver": 4
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
