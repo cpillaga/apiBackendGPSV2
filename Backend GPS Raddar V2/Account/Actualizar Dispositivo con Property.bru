@@ -1,13 +1,17 @@
 meta {
-  name: Crear Dispositivo Automatic con Asignar Propetario
+  name: Actualizar Dispositivo con Property
   type: http
   seq: 9
 }
 
-post {
-  url: {{url_backend}}/api/v1/users/createDriverDeviceController
+put {
+  url: {{url_backend}}/api/v1/users/updateDriverDeviceController?id=145
   body: json
   auth: bearer
+}
+
+params:query {
+  id: 145
 }
 
 auth:bearer {
@@ -17,7 +21,7 @@ auth:bearer {
 body:json {
   {
      "name_model": "MODELO-SMARTPHONEPRUEBA",
-     "serial_model": "2121231121223213123123900",
+     "serial_model": "21113123123123123123121123123112311111900",
      "contact_model": "22-33",
      "category_model": "Car",
      "attributes": [
@@ -26,7 +30,7 @@ body:json {
         "brand_label": "XYZ-987"
       }
     ],
-      "driver": 4
+      "driver": 6
   }
 }
 
